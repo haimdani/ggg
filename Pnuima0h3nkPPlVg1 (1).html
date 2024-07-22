@@ -1,0 +1,234 @@
+<html><head><base href="https://chaim-danino-ziv.com/"><title>חיים דנינו זיו - סוכנות לביטוח פנסיוני ופיננסים</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script><style>
+    @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap');
+    
+    :root {
+        --primary-color: #0056b3;
+        --secondary-color: #f8f9fa;
+        --accent-color: #ffc107;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Heebo', sans-serif;
+        direction: rtl;
+        background-color: var(--secondary-color);
+        color: #333;
+        line-height: 1.6;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    header {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 20px 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+        color: var(--accent-color);
+    }
+    
+    #hero {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://example.com/images/hero-background.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+    }
+    
+    #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    
+    .hero-content {
+        position: relative;
+        z-index: 1;
+    }
+    
+    h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+    
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: var(--accent-color);
+        color: #333;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .btn:hover {
+        background-color: #e0a800;
+    }
+    
+    section {
+        padding: 80px 0;
+    }
+    
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
+    
+    .service-card {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    .service-card:hover {
+        transform: translateY(-10px);
+    }
+    
+    .service-icon {
+        font-size: 3em;
+        margin-bottom: 20px;
+        color: var(--primary-color);
+    }
+    
+    #about {
+        background-color: var(--primary-color);
+        color: white;
+    }
+    
+    .about-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .about-text {
+        flex: 1;
+        padding-right: 40px;
+    }
+    
+    .about-image {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .about-image img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    
+    #contact {
+        background-color: var(--secondary-color);
+    }
+    
+    .contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    .form-group textarea {
+        height: 150px;
+    }
+    
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    @media (max-width: 768px) {
+        .about-content {
+            flex-direction: column;
+        }
+        
+        .about-text {
+            padding-right: 0;
+            margin-bottom: 40px;
+        }
+    }
+</style></head><body><header><div class="container"><nav><ul><li><a href="#hero">דף הבית</a></li><li><a href="#services">שירותים</a></li><li><a href="#about">אודות</a></li><li><a href="#contact">צור קשר</a></li></ul></nav></div></header><main><section id="hero"><div id="particles-js"></div><div class="hero-content"><h1>חיים דנינו זיו</h1><p>סוכנות לביטוח פנסיוני ופיננסים</p><a href="#contact" class="btn">צור קשר עכשיו</a></div></section><section id="services"><div class="container"><h2>השירותים שלנו</h2><div class="services-grid"><div class="service-card"><div class="service-icon">🏠</div><h3>ביטוח דירה</h3><p>הגנה מקיפה לנכס היקר ביותר שלך</p></div><div class="service-card"><div class="service-icon">🚗</div><h3>ביטוח רכב</h3><p>כיסוי מקיף לרכב שלך בכל מצב</p></div><div class="service-card"><div class="service-icon">💼</div><h3>ביטוח עסקים</h3><p>פתרונות מותאמים אישית לעסק שלך</p></div><div class="service-card"><div class="service-icon">👨‍👩‍👧‍👦</div><h3>ביטוח חיים</h3><p>הגנה על המשפחה שלך ועתידה הכלכלי</p></div></div></div></section><section id="about"><div class="container"><div class="about-content"><div class="about-text"><h2>אודות חיים דנינו זיו</h2><p>חיים דנינו זיו הוא סוכן ביטוח מוסמך עם ניסיון של למעלה מ-20 שנה בתחום הביטוח והפיננסים. אנו מתמחים במתן פתרונות מותאמים אישית ללקוחותינו, תוך שמירה על רמת שירות גבוהה ומקצועיות ללא פשרות.</p><p>אנו מאמינים כי כל לקוח הוא ייחודי, ולכן אנו מקדישים זמן להבנת הצרכים והמטרות של כל אחד מלקוחותינו, ומציעים פתרונות המותאמים בדיוק עבורם.</p></div><div class="about-image"><img alt="תמונה של חיים דנינו זיו, איש עסקים בחליפה כחולה מחייך למצלמה" src="https://example.com/images/chaim-danino-ziv.jpg" width="400" height="400"></div></div></div></section><section id="contact"><div class="container"><h2>צור קשר</h2><form class="contact-form" method="GET" action="https://chaim-danino-ziv.com/submit-contact"><div class="form-group"><label for="name">שם מלא</label><input type="text" id="name" name="name" required></div><div class="form-group"><label for="email">כתובת אימייל</label><input type="email" id="email" name="email" required></div><div class="form-group"><label for="phone">מספר טלפון</label><input type="tel" id="phone" name="phone" required></div><div class="form-group"><label for="message">הודעה</label><textarea id="message" name="message" required></textarea></div><button type="submit" class="btn">שלח הודעה</button></form></div></section></main><footer><div class="container"><p>&copy; 2023 חיים דנינו זיו - סוכנות לביטוח פנסיוני ופיננסים. כל הזכויות שמורות.</p></div></footer><script>
+    // Particles.js configuration
+    particlesJS('particles-js', {
+        particles: {
+            number: { value: 80, density: { enable: true, value_area: 800 } },
+            color: { value: "#ffffff" },
+            shape: { type: "circle", stroke: { width: 0, color: "#000000" }, },
+            opacity: { value: 0.5, random: false, },
+            size: { value: 3, random: true, },
+            line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
+            move: { enable: true, speed: 6, direction: "none", random: false, straight: false, out_mode: "out", bounce: false, },
+        },
+        interactivity: {
+            detect_on: "canvas",
+            events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" }, resize: true },
+            modes: { grab: { distance: 400, line_linked: { opacity: 1 } }, bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 }, repulse: { distance: 200, duration: 0.4 }, push: { particles_nb: 4 }, remove: { particles_nb: 2 } },
+        },
+        retina_detect: true
+    });
+
+    // GSAP animations
+    gsap.from("header", { duration: 1, y: -50, opacity: 0, ease: "power3.out" });
+    gsap.from(".hero-content", { duration: 1, y: 50, opacity: 0, ease: "power3.out", delay: 0.5 });
+    gsap.from(".service-card", { duration: 1, y: 50, opacity: 0, ease: "power3.out", stagger: 0.2, scrollTrigger: { trigger: "#services", start: "top 80%" } });
+    gsap.from(".about-content", { duration: 1, x: -50, opacity: 0, ease: "power3.out", scrollTrigger: { trigger: "#about", start: "top 80%" } });
+    gsap.from(".contact-form", { duration: 1, y: 50, opacity: 0, ease: "power3.out", scrollTrigger: { trigger: "#contact", start: "top 80%" } });
+</script></body></html>
